@@ -1,3 +1,20 @@
+#Edited Style Tiles template
+
+This is meant as a starting point for an online style guide. The current version is a first version in CSS that has not been tested (with room for improvement ;-) ). 
+
+You are strongly encouraged to fork this and edit anything you like to make it your own.
+
+Originally forked from https://github.com/jeradg/style-tiles-with-scss, but a lot has been rewritten.
+
+Major Changes:
+I wanted a somewhat simplified version stripped for SASS. Some files have been deleted.
+
+----
+
+The orginal readme file (below):
+
+-----
+
 #Style Tiles with SCSS
 
 ##What's this, then?
