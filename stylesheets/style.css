@@ -223,7 +223,7 @@ p[class*="font-details-"] {
   color: #6f6f6f;
 }
 
-.adjectives {
+.adjectives ul {
   font-size: 2rem;
   opacity: 0.5;
 }
