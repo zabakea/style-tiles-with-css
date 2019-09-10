@@ -31,7 +31,7 @@ main,
 footer {
   max-width: 1300px;
   margin: 0 auto;
-  padding: var(--white-space);
+  padding: calc(2*var(--white-space));
 }
 
 .full-width {
