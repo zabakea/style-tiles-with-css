@@ -1,3 +1,5 @@
+/* change these */
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 
@@ -7,7 +9,7 @@
 
 /* THIS IS ALL meant for editing. You might want to do it differently, name the variables differently, use the fonts in other ways in the font hierarchy etc. */
 
-:root {
+/*:root {
   --bg-color: #9f1c19;
   --link-color: #65d1fb;
   --link-hover-color: #ff8500;
@@ -17,6 +19,21 @@
   --primary-font: "Open Sans", sans-serif;
   --secondary-font: "Droid Serif", serif;
   --main-text-color: #222222;
+
+  --white-space: 1rem;
+}
+*/
+
+:root {
+  --bg-color: #000;
+  --link-color: #000;
+  --link-hover-color: #000;
+  --color-4: #000;
+  --color-5: #000;
+
+  --primary-font: sans-serif;
+  --secondary-font: serif;
+  --main-text-color: #000;
 
   --white-space: 1rem;
 }
