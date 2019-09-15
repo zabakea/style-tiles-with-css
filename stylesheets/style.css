@@ -9,7 +9,7 @@
 
 /* THIS IS ALL meant for editing. You might want to do it differently, name the variables differently, use the fonts in other ways in the font hierarchy etc. */
 
-/*:root {
+/* :root {
   --bg-color: #9f1c19;
   --link-color: #65d1fb;
   --link-hover-color: #ff8500;
@@ -22,7 +22,7 @@
 
   --white-space: 1rem;
 }
-*/
+ */
 
 :root {
   --bg-color: #000;
