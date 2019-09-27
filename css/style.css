@@ -9,6 +9,21 @@
 
 /* THIS IS ALL meant for editing. You might want to do it differently, name the variables differently, use the fonts in other ways in the font hierarchy etc. */
 
+/* change these */
+:root {
+  --bg-color: #000;
+  --link-color: #000;
+  --link-hover-color: #000;
+  --color-4: #000;
+  --color-5: #000;
+
+  --primary-font: sans-serif;
+  --secondary-font: serif;
+  --main-text-color: #000;
+
+  --white-space: 1rem;
+}
+
 /* :root {
   --bg-color: #9f1c19;
   --link-color: #65d1fb;
@@ -24,23 +39,14 @@
 }
  */
 
-:root {
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
-
-  --primary-font: sans-serif;
-  --secondary-font: serif;
-  --main-text-color: #000;
-
-  --white-space: 1rem;
-}
-
 html {
   font-size: 100%;
   font-family: var(--primary-font);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 header,
@@ -87,11 +93,11 @@ main {
 }
 
 section {
-  margin-bottom: calc(2*var(--white-space));
+  margin-bottom: calc(4*var(--white-space));
 }
 
 .section-heading {
-  font-family: var(--primary-font);
+  /*font-family: var(--primary-font);*/
   font-style: italic;
   font-size: 1.3rem;
   color: #777;
@@ -155,6 +161,17 @@ ul li:last-child {
   background: url(../img/white_paperboard.png) top left repeat;
 }
 
+.images ul {
+  flex-direction: column;
+  text-align: center;
+}
+
+.images li {
+  display: block;
+  /*margin-right: 5vw;*/
+  margin-bottom: 1rem;
+}
+
 button {
   padding: 1rem;
   border-radius: 4px;
@@ -168,7 +185,7 @@ button {
   text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
-  margin: 0 1rem 1rem 0;
+  margin: 0 1rem 0 0;
 }
 
 .secondary-button {
