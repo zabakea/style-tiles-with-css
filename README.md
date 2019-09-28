@@ -1,4 +1,4 @@
-# Edited Style Tiles starting point
+# Style Tiles in HTML, CSS og js - starting point
 
 This is meant as a starting point for an online style Tile.  
 
@@ -12,8 +12,6 @@ I wanted a somewhat simplified version in plain CSS (and stripped for SCSS). Som
 ----
 
 # Some relevant content from The orginal readme file (below):
-
------
 
 ## Style Tiles with ~~S~~CSS
 
