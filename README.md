@@ -6,12 +6,12 @@ You are strongly encouraged to fork this and edit anything you like to make it y
 
 Originally forked from https://github.com/jeradg/style-tiles-with-scss, but a lot has been rewritten. (see this for the SCSS version)
 
-Major Changes:
-I wanted a somewhat simplified version in plain CSS (and stripped for SCSS). Some files and styling have been deleted.
+Major changes:
+This is a somewhat simplified version in plain CSS (and stripped for SCSS). Some files and styling have been deleted.
 
 ----
 
-# Some relevant content from The orginal readme file (below):
+# Some relevant content from the orginal readme file (the SCSS version)
 
 ## Style Tiles with ~~S~~CSS
 
