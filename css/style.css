@@ -1,7 +1,17 @@
 /* change these */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+@import url(
+  https://fonts.googleapis.com/css?family=Open+Sans:400italic,
+  800italic,
+  400,
+  800
+);
+@import url(
+  https://fonts.googleapis.com/css?family=Droid+Serif:400,
+  700,
+  400italic,
+  700italic
+);
 
 * {
   box-sizing: border-box;
@@ -15,7 +25,7 @@
   --link-color: #000;
   --link-hover-color: #000;
   --color-4: #000;
-  --color-5: #000;
+  --color-5: hotpink;
 
   --primary-font: sans-serif;
   --secondary-font: serif;
@@ -23,21 +33,6 @@
 
   --white-space: 1rem;
 }
-
-/* :root {
-  --bg-color: #9f1c19;
-  --link-color: #65d1fb;
-  --link-hover-color: #ff8500;
-  --color-4: #05abeb;
-  --color-5: #ff241f;
-
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #222222;
-
-  --white-space: 1rem;
-}
- */
 
 html {
   font-size: 100%;
@@ -54,20 +49,20 @@ main,
 footer {
   max-width: 1300px;
   margin: 0 auto;
-  padding: calc(2*var(--white-space));
+  padding: calc(2 * var(--white-space));
 }
 
 .full-width {
   background: var(--bg-color);
   color: white;
-  width: 100%
+  width: 100%;
 }
 
 .header-wrapper h1 {
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: -2px;
-  padding-right: .75em;
+  padding-right: 0.75em;
   font-weight: bold;
   color: white;
 }
@@ -89,11 +84,11 @@ footer {
 }
 
 main {
-  padding: calc(2*var(--white-space));
+  padding: calc(2 * var(--white-space));
 }
 
 section {
-  margin-bottom: calc(4*var(--white-space));
+  margin-bottom: calc(4 * var(--white-space));
 }
 
 .section-heading {
@@ -101,7 +96,7 @@ section {
   font-style: italic;
   font-size: 1.3rem;
   color: #777;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 ul {
@@ -250,8 +245,8 @@ a:hover {
 }
 
 p[class*="font-details-"] {
-  margin-top: .5rem;
-  margin-bottom: calc(2*var(--white-space));
+  margin-top: 0.5rem;
+  margin-bottom: calc(2 * var(--white-space));
   font-size: 0.75rem;
   font-family: var(--secondary-font);
   color: #6f6f6f;
@@ -270,7 +265,7 @@ footer {
   font-style: italic;
 }
 
-@media (min-width:800px) {
+@media (min-width: 800px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -288,7 +283,7 @@ footer {
   }
 }
 
-@media (min-width:900px) {
+@media (min-width: 900px) {
   .adjectives ul {
     flex-direction: row;
   }
