@@ -36,6 +36,25 @@ use the fonts in other ways in the font hierarchy etc. */
   --white-space: 1rem;
 }
 
+button {
+  transition: all 3s;
+}
+a {
+  transition: all 3s;
+}
+button:hover {
+  background-color: var(--link-hover-color);
+  transform: scale(3) rotate(40deg);
+}
+
+button:active {
+  background-color: var(--bg-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  font-size: 4rem;
+}
 html {
   font-size: 100%;
   font-family: var(--primary-font);
@@ -196,15 +215,6 @@ button:focus-within {
   border-radius: 4px;
 }
 
-button:hover {
-  background-color: var(--link-hover-color);
-  /*opacity: 0.5;*/
-}
-
-button:active {
-  background-color: var(--bg-color);
-}
-
 .typography-main {
   color: var(--main-text-color);
 }
@@ -240,10 +250,6 @@ a {
   font-weight: bold;
   text-decoration: none;
   transition: all 0.2s;
-}
-
-a:hover {
-  color: var(--link-hover-color);
 }
 
 p[class*="font-details-"] {
