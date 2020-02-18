@@ -1,17 +1,8 @@
 /* change these */
 
-@import url(
-  https://fonts.googleapis.com/css?family=Open+Sans:400italic,
-  800italic,
-  400,
-  800
-);
-@import url(
-  https://fonts.googleapis.com/css?family=Droid+Serif:400,
-  700,
-  400italic,
-  700italic
-);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
 
 * {
   box-sizing: border-box;
@@ -29,8 +20,8 @@ use the fonts in other ways in the font hierarchy etc. */
   --color-4: hotpink;
   --color-5: rebeccapurple;
 
-  --primary-font: sans-serif;
-  --secondary-font: serif;
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Droid Serif", serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -113,7 +104,6 @@ section {
 }
 
 .section-heading {
-  /*font-family: var(--primary-font);*/
   font-style: italic;
   font-size: 1.3rem;
   color: #777;
@@ -194,7 +184,7 @@ button {
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 "Open Sans", sans-serif;
+  font: bold 1.25em/1 var(--primary-font);
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
