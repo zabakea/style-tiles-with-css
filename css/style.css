@@ -4,8 +4,11 @@
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
 
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Zilla+Slab&display=swap');
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* THIS IS ALL meant for editing. You might want to do it differently, 
@@ -14,275 +17,318 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+    --bg-color: #36594C;
+    --primary-color: #D94436;
+    --secondary-color: #598C4A;
+    --color-4: white;
+    --color-5: black;
+    --primary-font: 'Gloria Hallelujah', cursive;
+    --secondary-font: "Segoe UI", sans-serif;
+    --main-text-color: #000;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
-
-  --white-space: 1rem;
+    --white-space: 1rem;
 }
 
 button {
-  transition: all 3s;
+    transition: all 3s;
 }
+
 a {
-  transition: all 3s;
+    transition: all 3s;
 }
-button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+
+.primary-button:hover {
+    background-color: #C84436;
+    transform: scale(1.05);
+}
+
+.secondary-button:hover {
+    background-color: #588044;
+    transform: scale(1.05);
 }
 
 button:active {
-  background-color: var(--bg-color);
+    background-color: var(--bg-color);
 }
 
 a:hover {
-  color: var(--link-hover-color);
-  font-size: 4rem;
+    text-decoration: underline;
+    font-size: 1.1rem;
 }
+
 html {
-  font-size: 100%;
-  font-family: var(--primary-font);
+    font-size: 100%;
+    font-family: var(--primary-font);
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 header,
 main,
 footer {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: calc(2 * var(--white-space));
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: calc(2 * var(--white-space));
 }
 
 .full-width {
-  background: var(--bg-color);
-  color: white;
-  width: 100%;
+    background: var(--bg-color);
+    color: white;
+    width: 100%;
 }
 
 .header-wrapper h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: -2px;
-  padding-right: 0.75em;
-  font-weight: bold;
-  color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-right: 0.75em;
+    color: white;
+    font-weight: 400;
+
+    font-style: normal;
 }
 
 .header-wrapper h2 {
-  font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
-  margin: var(--white-space) 0;
+    font-size: 1.6em;
+    color: rgba(255, 255, 255, 0.95);
+    margin: var(--white-space) 0;
+    color: var(--primary-color);
 }
 
 .header-wrapper h3 {
-  font-size: 1.2rem;
-  font-style: italic;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 .header-wrapper h4 {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    padding-top: 0.5rem;
+    font-style: italic;
 }
 
 main {
-  padding: calc(2 * var(--white-space));
+    padding: calc(2 * var(--white-space));
 }
 
 section {
-  margin-bottom: calc(4 * var(--white-space));
+    margin-bottom: calc(4 * var(--white-space));
 }
 
 .section-heading {
-  font-style: italic;
-  font-size: 1.3rem;
-  color: #777;
-  margin: 0.5rem 0;
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+    color: #777;
+    margin: 0.5rem 0;
 }
 
 ul {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .swatches li {
-  margin-right: 5vw;
-  height: 15vw;
-  width: 20%;
+    margin-right: 5vw;
+    height: 15vw;
+    width: 20%;
 }
 
 ul li:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+    background-color: var(--bg-color);
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+    background-color: var(--primary-color);
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+    background-color: var(--secondary-color);
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+    background-color: var(--color-4);
+    border: solid black 1px;
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+    background-color: var(--color-5);
 }
 
 .textures li {
-  height: 30vw;
-  width: 40%;
-  margin-right: 5vw;
+    height: 30vw;
+    width: 40%;
+    margin-right: 5vw;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+    background: url(../img/pw_maze_white.png) top left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+    background: url(../img/subtle_grunge.png) top left repeat;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+    background: url(../img/pw_maze_white.png) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+    background: url(../img/white_paperboard.png) top left repeat;
 }
 
 .images ul {
-  flex-direction: column;
-  text-align: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .images li {
-  display: block;
-  /*margin-right: 5vw;*/
-  margin-bottom: 1rem;
+    display: block;
+    /*margin-right: 5vw;*/
+    margin-bottom: 1rem;
 }
 
 button {
-  padding: 1rem;
-  border-radius: 4px;
-  background: var(--link-color);
-  text-align: center;
-  text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
-  letter-spacing: 1px;
-  color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  margin: 0 1rem 1rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+    background: var(--primary-color);
+    text-align: center;
+    text-decoration: none;
+    font: bold 1.25em/1 var(--primary-font);
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px -1px 0px #0374a0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
 }
 
 .secondary-button {
-  background: var(--color-5);
+    background: var(--secondary-color);
 }
 
 button:focus,
 button:active,
 button:focus-within {
-  outline: 0;
-  border-radius: 4px;
+    outline: 0;
+    border-radius: 4px;
 }
 
 .typography-main {
-  color: var(--main-text-color);
+    color: var(--main-text-color);
 }
 
 .h1-sample {
-  font-size: 2.4rem;
-  font-weight: bold;
+    font-size: 3.4rem;
+    font-weight: bold;
+    position: absolute;
+    color: var(--primary-color);
+    flex: 0 0 120px;
+}
+
+.font-details-h1 {
+    flex: 1 1;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
-  font-size: 1.25rem;
+    font-family: var(--secondary-font);
+    font-style: italic;
+    font-size: 1.25rem;
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
-  line-height: 1.5;
-  max-width: 960px;
+    font-family: var(--secondary-font);
+    line-height: 1.5;
+    max-width: 960px;
+}
+
+a.typography-sample {
+    font-family: var(--secondary-font);
 }
 
 strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 em {
-  font-style: italic;
+    font-style: italic;
 }
 
 a {
-  font-family: var(--primary-font);
-  color: var(--link-color);
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.2s;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s;
 }
 
 p[class*="font-details-"] {
-  margin-top: 0.5rem;
-  margin-bottom: calc(2 * var(--white-space));
-  font-size: 0.75rem;
-  font-family: var(--secondary-font);
-  color: #6f6f6f;
+    margin-top: 0.5rem;
+    margin-bottom: calc(2 * var(--white-space));
+    font-size: 0.75rem;
+    font-family: var(--secondary-font);
+    color: #6f6f6f;
 }
 
 .adjectives ul {
-  font-size: 2rem;
-  opacity: 0.5;
+    font-size: 2rem;
+
 }
 
 .adjectives ul {
-  flex-direction: column;
+    flex-direction: column;
+
+}
+
+.adjectives li {
+    color: var(--bg-color);
 }
 
 footer {
-  font-style: italic;
+    font-style: italic;
 }
 
 @media (min-width: 800px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 4rem;
-  }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+    }
 
-  .swatches li {
-    margin-right: 3%;
-    height: 10vw;
-    width: 20%;
-  }
+    .swatches li {
+        margin-right: 3%;
+        height: 10vw;
+        width: 20%;
+    }
 
-  .textures li {
-    height: 15vw;
-  }
+    .textures li {
+        height: 15vw;
+    }
 }
 
 @media (min-width: 900px) {
-  .adjectives ul {
-    flex-direction: row;
-  }
+    .adjectives ul {
+        flex-direction: row;
+    }
+}
+
+.heroimage {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/2880px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg);
+    height: 31.28rem;
+    width: 50rem;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
